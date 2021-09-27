@@ -13,7 +13,7 @@ import org.junit.runner.RunWith;
                   "html:target/Cucumber-report/CucumberPretty.html",
                    "json:target/Cucumber-report/cucumbertestreport.json",
                   "rerun:target/Cucumber-report/rerun.txt"},
-        monochrome = true,
+        monochrome = false,
        //tags = "@SessionTest"
        tags = "@facebooktest"
 )
