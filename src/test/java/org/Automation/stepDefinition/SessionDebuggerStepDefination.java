@@ -56,16 +56,16 @@ public class SessionDebuggerStepDefination {
                 "Books, Watches, Shoes and More - Amazon.in",dr.getTitle().trim());
 
         dr.findElement(By.id("twotabsearchtextbox")).sendKeys("pendrive");
-        dr.findElement(By.id("nav-search-submit-button")).click(); System.out.println("pendrive list");
+        dr.findElement(By.id("nav-search-submit-button")).click();
       List<WebElement> pendrivelist = dr.findElements(By.xpath("//span[@class='a-size-medium a-color-base a-text-normal']"));
 
             System.out.println("pendrive list");
         System.out.println("pendrive list");
-        System.out.println("pendrive list");
+       
         
             pendrivelist.forEach((n) -> System.out.println(n.getText()));
 
-
+System.out.println("pendrive list");
 
     }
 
