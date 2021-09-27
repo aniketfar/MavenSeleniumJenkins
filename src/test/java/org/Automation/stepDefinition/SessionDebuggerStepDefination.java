@@ -46,20 +46,20 @@ public class SessionDebuggerStepDefination {
        opt.setExperimentalOption("debuggerAddress", "localhost:9222");
         opt.addArguments();
        WebDriver dr = new ChromeDriver(opt);
-        dr.get("https://www.amazon.in/"); System.out.println("pendrive list");
+        dr.get("https://www.amazon.in/");
         dr.findElement(By.id("nav-link-accountList")).click();
-        dr.findElement(By.id("ap_email")).sendKeys("aniketfarkase51@gmail.com"); System.out.println("pendrive list");
+        dr.findElement(By.id("ap_email")).sendKeys("aniketfarkase51@gmail.com");
         dr.findElement(By.id("continue")).click();
         dr.findElement(By.id("ap_password")).sendKeys("@nIket51!!");
         dr.findElement(By.id("signInSubmit")).click();
         Assert.assertEquals("Login unsucccesfull","Online Shopping site in India: Shop Online for Mobiles, " +
                 "Books, Watches, Shoes and More - Amazon.in",dr.getTitle().trim());
 
-        dr.findElement(By.id("twotabsearchtextbox")).sendKeys("pendrive");
-        dr.findElement(By.id("nav-search-submit-button")).click(); System.out.println("pendrive list");
-      List<WebElement> pendrivelist = dr.findElements(By.xpath("//span[@class='a-size-medium a-color-base a-text-normal']")); System.out.println("pendrive list");
+        dr.findElement(By.id("twotabsearchtextbox")).sendKeys("pendrive1");
+        dr.findElement(By.id("nav-search-submit-button")).click();
+      List<WebElement> pendrivelist = dr.findElements(By.xpath("//span[@class='a-size-medium a-color-base a-text-normal']"));
 
-            System.out.println("pendrive list");
+            System.out.println("pendrive list Amazon");
        
        
         
