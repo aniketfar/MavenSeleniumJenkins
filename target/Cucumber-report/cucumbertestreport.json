@@ -1,0 +1,41 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2021-09-27T19:53:11.000Z",
+        "line": 11,
+        "name": "Perform create account on Facebook",
+        "description": "",
+        "id": "how-to-execute-selenium-scripts-on-already-opened-browser;perform-create-account-on-facebook",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3812437100,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "Perform create account on Facebook",
+            "match": {
+              "location": "org.Automation.stepDefinition.SessionDebuggerStepDefination.perform_create_account_on_facebook()"
+            },
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@facebooktest"
+          }
+        ]
+      }
+    ],
+    "name": "How To Execute Selenium Scripts On Already Opened Browser",
+    "description": "",
+    "id": "how-to-execute-selenium-scripts-on-already-opened-browser",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/org/Automation/features/facebook.feature",
+    "tags": []
+  }
+]
