@@ -31,6 +31,7 @@ public class Util {
         String ChromeSessionpath = Util.getPropertyValue("ChromeSessionpathtest");
         String run_remote_debugging_port_command = Util.getPropertyValue("ChromeSessionCommand");
         ProcessBuilder builder = new ProcessBuilder("cmd.exe", "/c", run_remote_debugging_port_command).directory(new File(ChromeSessionpath));
+        System.out.println(text);
         Process p = builder.start();
         p.waitFor(2, TimeUnit.SECONDS);
         return p;
@@ -38,9 +39,9 @@ public class Util {
 
     public static void printCmdResults(Process process) throws IOException {
         BufferedReader reader = new BufferedReader(new InputStreamReader(process.getInputStream()));
-        String line = "";
+        String text = "";
         while ((line = reader.readLine()) !=null){
-            System.out.println(line);
+            System.out.println(text);
         }
     }
 
